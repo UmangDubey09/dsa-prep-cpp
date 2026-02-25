@@ -21,14 +21,14 @@ Sample Output 1:
 1
 Explanation: The array is [2, 3, 1, 6, 3, 6, 2]. 
 Here, the numbers 2, 3, and 6 are present twice, and the number 1 is present only once. 
-So, the unique number in this array is 1.
+So, the unique number in this array is 1. 
 */
 int findUnique(int *arr, int size)
 {
     //Write your code here
     int ans = 0;
     for(int i = 0; i < size; i++){
-        ans = ans ^ arr[i];
+        ans = ans ^ arr[i] ;
     }
     return ans;
 }
