@@ -21,7 +21,7 @@ The duplicate integer value present in the array is 1. Hence, the answer is 1 in
 
 For the second test case,
 The duplicate integer value present in the array is 3. Hence, the answer is 3 in this case.
-Link Codehelp: https://www.naukri.com/code360/problems/find-unique_625159?leftPanelTabValue=PROBLEM 
+Link Codehelp: https://www.naukri.com/code360/problems/duplicate-in-array_893397?source=youtube&campaign=love_babbar_codestudio1&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio1&leftPanelTabValue=PROBLEM
 */
 int findDuplicate(vector<int> &arr) 
 {
