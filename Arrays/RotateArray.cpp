@@ -29,3 +29,28 @@ public:
         nums = vec;
     }
 };
+
+/*
+Now we will discuss the optimal solution to rotate the array in place with O(1) extra space.
+ The idea is to reverse the entire array, then reverse the first k elements and finally reverse the remaining n-k elements. 
+ This way we can achieve the desired rotation without using any extra space.
+Time complexity of this approach is O(n) and space complexity is O(1) since we are rotating the array in place without using any extra space.
+*/
+
+class Solution {
+public:
+    void reverse(vector<int>& nums, int start, int end) {
+        while(start < end) {
+            swap(nums[start++], nums[end--]);
+        }
+    }
+
+    void rotate(vector<int>& nums, int k) {
+        int n = nums.size();
+        k = k % n;
+
+        reverse(nums, 0, n-1);
+        reverse(nums, 0, k-1);
+        reverse(nums, k, n-1);
+    }
+};
